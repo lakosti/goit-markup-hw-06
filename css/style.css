@@ -674,9 +674,9 @@ img {
   border-radius: 2px;
   margin-right: 9px;
 }
-/* .check-text-link {
+.check-text-link {
   color: var(--accent-color);
-} */
+}
 
 .form-btn {
   padding: 10px 55px;
