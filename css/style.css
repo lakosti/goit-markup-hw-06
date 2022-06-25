@@ -421,6 +421,9 @@ img {
   display: flex;
   align-items: baseline;
 }
+.footer-position:last-child {
+  justify-content: end;
+}
 .footer-container {
   margin-right: 70px;
 }
@@ -485,15 +488,9 @@ img {
 .join-soc-link:focus {
   background-color: var(--accent-color);
 }
-.subscribe-wrap {
-  /* display: flex;
-  justify-content: end; */
-  margin-right: 0;
-}
 
 .input-footer-wrap {
   display: flex;
-  /* justify-content: end; */
 }
 .input-footer {
   padding-left: 16px;
@@ -502,12 +499,28 @@ img {
   margin-right: 12px;
   width: 358px;
   background-color: transparent;
+  outline: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  color: var(--accent-text-color);
 }
 .footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 29px;
   width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--animation-time);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #188ce8;
+}
+
+.icon-telegram {
+  margin-left: 10px;
+  fill: currentColor;
 }
 /* ------------------------------------MODAL WINDOW---------------------- */
 .backdrop {
@@ -673,6 +686,19 @@ img {
   border: 2px solid var(--second-text-color);
   border-radius: 2px;
   margin-right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check-icon {
+  fill: transparent;
+}
+.input-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}
+.input-check:checked + .check-text .check-icon {
+  fill: var(--background-main-color);
 }
 .check-text-link {
   color: var(--accent-color);
