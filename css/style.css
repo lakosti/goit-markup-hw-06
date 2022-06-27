@@ -285,12 +285,11 @@ img {
   margin: -15px;
 }
 .work-item {
+  position: relative;
   flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
 }
-.work-relative {
-  position: relative;
-}
+
 .work-absolute {
   position: absolute;
   bottom: 0;
