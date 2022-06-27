@@ -73,7 +73,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  transition: background-color, var(--animation-time);
+  transition: background-color var(--animation-time), color var(--animation-time);
 }
 .soc-item {
   width: 44px;
@@ -90,7 +90,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo-black {
@@ -269,12 +268,10 @@ img {
   color: var(--second-text-color);
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .benefits-text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 /* ----------------------------WORKS------------------------------ */
 .work {
@@ -294,13 +291,13 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-text-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -314,7 +311,6 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 /* ----------------------------TEAM------------------------------ */
 .team {
@@ -334,7 +330,6 @@ img {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-item {
   width: 270px;
@@ -348,7 +343,6 @@ img {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.03em;
 }
 .team-description {
   border-radius: 0px 0px 4px 4px;
@@ -400,7 +394,7 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--team-icon-color);
-  transition: color var(--animation-time);
+  transition: color var(--animation-time), border var(--animation-time);
 }
 .clients-icon {
   fill: currentColor;
@@ -443,7 +437,6 @@ img {
 .address {
   font-weight: 400px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   transition: color var(--animation-time);
 }
 .address-link {
@@ -465,7 +458,6 @@ img {
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-text-color);
 }
@@ -578,6 +570,7 @@ img {
 .icon-close-modal {
   width: 18px;
   height: 18px;
+  transition: fill var(--animation-time);
 }
 .close-modal-bnt:hover,
 .close-modal-bnt:focus {
@@ -589,7 +582,6 @@ img {
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 .form-child {
@@ -598,9 +590,9 @@ img {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
+  transition: border var(--animation-time), fill var (--animation-time);
 }
 .form-child:focus {
-  /* cursor: pointer; */
   border: 1px solid var(--accent-color);
 }
 .modal-field {
@@ -659,7 +651,6 @@ img {
   justify-content: center;
   font-weight: 400;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* ////////////////////////////////////////////////BEFORE + BG image///////////////////////// */
@@ -688,6 +679,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--animation-time), color var(--animation-time),
+    fill var(--animation-time);
 }
 .check-icon {
   fill: transparent;
@@ -708,8 +701,8 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition-duration: 500ms;
+  transform: scale(1.01);
   transition: transform var(--animation-time);
-  transform: scale(1);
 }
 /* ----------------------------------------------------------Portfolio-------------------------------------------- */
 
@@ -721,7 +714,8 @@ img {
   border-radius: 4px;
   background-color: var(--backgound-second-color);
   color: var(--second-text-color);
-  transition: background-color var(--animation-time), color var(--animation-time);
+  transition: background-color var(--animation-time), color var(--animation-time),
+    box-shadow var(--animation-time);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -745,7 +739,6 @@ img {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
 }
 /* /* ----------------------------------CARD-----------------------------------  */
@@ -787,7 +780,6 @@ img {
 
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: 0.03em;
 
   transform: translatey(101%);
   overflow: hidden;
@@ -812,7 +804,6 @@ img {
 .card-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
 .card-text-possition {
   padding: 20px 24px;
